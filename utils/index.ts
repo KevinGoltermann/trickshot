@@ -3,7 +3,7 @@ import jwtDecode from 'jwt-decode';
 
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
-export const createOrGetUser = async (reponse: any) => {
+export const createOrGetUser = async (reponse: any, addUser: any) => {
   const decoded: { name: string, picture: string, sub: string} = jwtDecode(reponse.credential);
 
   const { name, picture, sub } = decoded;
@@ -14,6 +14,8 @@ export const createOrGetUser = async (reponse: any) => {
     userName: name,
     image: picture,
   };
+
+  addUser(user);
 
   await axios.post(`http://localhost:3000/api/auth`, user);
 }
