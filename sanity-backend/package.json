@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Kevin Goltermann <kevin.goltermann@datadoghq.com>",
+  "author": "Kevin Goltermann <kggoltermann@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",

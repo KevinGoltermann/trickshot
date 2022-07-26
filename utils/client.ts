@@ -1,7 +1,7 @@
 import sanityClient from '@sanity/client';
 
 export const client = sanityClient({
-  projectId: 'b7kv1pqu',
+  projectId: '2rvbg77j',
   dataset: 'production',
   apiVersion: '2022-03-10',
   useCdn: false,
