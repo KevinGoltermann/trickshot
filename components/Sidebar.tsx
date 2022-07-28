@@ -34,28 +34,6 @@ const userProfile = false;
               </div>
             </Link>
           </div>
-          {!userProfile && (
-            <div className='px-2 py-4 hidden xl:block'>
-              <p className='text-gray-400 '>Login to like and comment on videos</p>
-              <div className='pr-4'>
-                <GoogleLogin 
-                  clientId=""
-                  render={(renderProps) => (
-                    <button
-                    className='cursor-pointer bg-white text-lg text-[#F15997] border-[1px] border-[#F15997] font-semibold px-6 py-3 rounded-md outline-none w-full mt-3 hover:text-white hover:bg-[#F15997]'
-                    onClick={renderProps.onClick}
-                    disabled={renderProps.disabled}
-                    >
-                      Log in
-                    </button>
-                  )}
-                  onSuccess={() => {}}
-                  onFailure={() => {}}
-                  cookiePolicy='single-host-origin'
-                />
-              </div>
-            </div>
-          )}
           <Discover />
           <SuggestedAccounts />
           <Footer />
