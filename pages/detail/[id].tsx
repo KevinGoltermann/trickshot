@@ -24,7 +24,7 @@ const Detail = ({ postDetails }: IProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const router = useRouter();
   const { userProfile }: any = useAuthStore();
-  const [comment, setComment] = useState('');
+  const [comment, setComment] = useState<string>('');
   const [isPostingComment, setIsPostingComment] = useState(false);
 
   const onVideoClick = () => {
@@ -55,7 +55,7 @@ const Detail = ({ postDetails }: IProps) => {
     }
   }
 
-  const addComment = async (e) => {
+  const addComment = async (e: any) => {
     e.preventDefault();
 
     if(userProfile && comment) {
