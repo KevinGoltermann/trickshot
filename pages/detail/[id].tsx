@@ -122,14 +122,14 @@ const Detail = ({ postDetails }: IProps) => {
         <div className='lg:mt-20 mt-10'>
           <div className='flex gap-3 p-2 cursor-pointer font-semibold rounded'>
             <div className='ml-4 md:w-20 md:h-20 w-16 h-16'>
-              <Link href='/'>
+              <Link href=''>
                 <>
                   <Image width={62} height={62} className="rounded-full" src={post.postedBy.image} alt="profile picture" layout="responsive"></Image>
                 </>
               </Link>
             </div>
             <div>
-              <Link href='/'>
+              <Link href={`/profile/${post.userId}`}>
                 <div className='mt-3 flex flex-col gap-2'>
                   <p className='flex gap-2 md:text-md font-bold text-primary'>
                     {post.postedBy.userName}
