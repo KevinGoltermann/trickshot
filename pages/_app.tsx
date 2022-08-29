@@ -26,7 +26,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     sampleRate: 100,
     premiumSampleRate: 100,
     trackInteractions: true,
-    defaultPrivacyLevel:'mask-user-input'
+    defaultPrivacyLevel:'mask-user-input',
+    trackFrustrations: true
 });
     
 datadogRum.startSessionReplayRecording();
